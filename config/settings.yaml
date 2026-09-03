@@ -1,0 +1,47 @@
+google:
+  credentials_path: ${GOOGLE_CREDENTIALS}
+  drive_root_folder_id: ${GOOGLE_DRIVE_ROOT_FOLDER_ID}
+  oauth_client_id: ${GOOGLE_OAUTH_CLIENT_ID}
+  oauth_client_secret: ${GOOGLE_OAUTH_CLIENT_SECRET}
+  oauth_refresh_token: ${GOOGLE_OAUTH_REFRESH_TOKEN}
+
+libreoffice:
+  executable_path: ${LIBREOFFICE_PATH}
+  timeout_seconds: 60
+
+paths:
+  cache_dir: cache
+  template_cache_dir: cache/templates
+  metadata_cache_dir: cache/metadata
+  temp_dir: tmp
+  logs_dir: logs
+
+logging:
+  level: INFO
+  file_date_format: "%Y-%m-%d"
+
+pdf:
+  delete_temp_docx: true
+  delete_temp_pdf_after_delivery: true
+  keep_temp_files_on_error: true
+
+auth:
+  authorized_users: ${AUTHORIZED_USERS}
+  unauthorized_action: "ignore"
+
+schedule:
+  enabled: ${SCHEDULE_ENABLED}
+  sheet_id: ${SCHEDULE_SHEET_ID}
+  manager_name: ${SCHEDULE_MANAGER_NAME}
+  poll_interval_seconds: ${SCHEDULE_POLL_INTERVAL}
+  timezone: ${SCHEDULE_TIMEZONE}
+  notification_start_time: ${SCHEDULE_NOTIFICATION_START_TIME}
+  notification_end_time: ${SCHEDULE_NOTIFICATION_END_TIME}
+
+offers:
+  enabled: ${OFFERS_ENABLED}
+  sheet_id: ${OFFERS_SHEET_ID}
+  poll_interval_seconds: ${OFFERS_POLL_INTERVAL}
+  samokat_sheet: ${OFFERS_SAMOKAT_SHEET}
+  lavka_sheet: ${OFFERS_LAVKA_SHEET}
+

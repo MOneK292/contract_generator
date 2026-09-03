@@ -1,0 +1,58 @@
+# Environment & secrets
+.env
+.env.*
+!.env.example
+config/credentials.json
+*.pem
+*.key
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+ENV/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.agents/
+
+# Runtime caches & ephemeral data
+cache/
+logs/
+tmp/
+
+# Binary documents & archives
+*.tar.gz
+*.zip
+*.tar
+*.docx
+*.docm
+*.pdf
+*.xlsx
+*.xls
+*.db
+*.sqlite
+*.sqlite3
+
+# Local debug & audit dumps
+audit_*
+diff_output.txt
+full_diff.txt
+test_out*.txt
+pytest_output.txt
+ui_out.txt
+consts.txt
+PROJECT_INFO.md
+
+# Internal integrations
+src/interfaces/telegram/handlers/crm_lookup.py
+src/services/bitrix.py
+
